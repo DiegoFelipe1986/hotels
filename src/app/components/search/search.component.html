@@ -1,0 +1,19 @@
+<div class="col-md-12 box">
+    <h5 class="sub-titles">Filtros</h5>
+</div>
+<div class="col-md-12 box" style="margin-top: 5px">
+    <img src="../../../assets/icons/filters/search.svg" width="20px" alt="">
+    <span class="sub-titles" style="margin-left:10px">Nombre del hotel</span>
+
+    <div class="form-group row above">
+        <div class="col-sm-9">
+            <div class="form-group">
+                <input class="form-control" placeholder="Nombre del Hotel" (ngModel)="buscarHotel()" type="text" name="buscar">
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-primary" (click)="searchHotel(searchText.value)">Buscar</button>
+        </div>
+    </div>
+
+</div>

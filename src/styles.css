@@ -1,1 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #f4f4f4;
+}
+
+.bg-primary {
+    background-color: #013880!important;
+}
+
+.container {
+    max-width: 98%!important;
+}
+
+.box {
+    background-color: #fff;
+    padding: 15px;
+    -webkit-box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 5px -3px rgba(0, 0, 0, 0.75);
+}
+
+.sub-titles {
+    color: #013880;
+}
+
+.p-content {
+    color: #626162;
+}
+
+.price-title {
+    color: #df6800;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.price-number {
+    color: #df6800;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #013880;
+    border-color: #013880;
+}
+
+.view-hotel {
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #013880;
+    border-color: #013880;
+    -webkit-box-shadow: 10px 10px 5px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px -12px rgba(0, 0, 0, 0.75);
+}
+
+.left-dashed {
+    border-left: 1px dashed #ccc;
+}
+
+
+/* helpers */
+
+.above {
+    margin-top: 30px;
+}
+
+.sep-amenities {
+    padding: 5px;
+    font-size: 40px;
+    color: yellow;
+}

@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row above">
+        <div class="col-md-3">
+            <div class="col-md-12">
+                <app-search></app-search>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="box" *ngFor="let hotel of hotels" style="margin-top: 10px">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../../../assets/img/hotels/{{hotel.image}}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <h4 class="sub-titles">{{hotel.name}}</h4>
+                        </div>
+                        <div class="col-md-12" style="margin-top: 10px">
+                            <img src="../assets/icons/filters/star.svg" *ngFor="let start of numberOfStarts(hotel.stars)" height="20px" alt="">
+                        </div>
+                        <div class="col-md-12" style="margin-top: 10px">
+                            <img *ngFor="let amenity of hotel.amenities" src="../assets/icons/amenities/{{amenity}}.svg" width="30px" class="sep-amenities" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3 left-dashed">
+                        <div class="col-md-12 above" style="text-align: center">
+                            <p class="p-content">Precio por noche por <br>habitación:</p>
+                            <h2 class="price-title">ARS <span class="price-number">{{hotel.price}}</span></h2>
+                            <button class="btn view-hotel">
+                                <span>Ver Hotel</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
